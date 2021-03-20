@@ -65,8 +65,9 @@ function writePassword() {
     if (!confirmInt, !confirmChar, !confirmCaps, !confirmAlpha) {
         alert("Your password must contain at least one special, numeric, lowercase, or uppercase character.");
         return generatePassword();
-    } else randomizePassword();
-
+    } else {
+        randomizePassword();
+    }
     /* for loop turning array into a string with proper length and setting 
     finalPassword equal to the randomized selection*/
     function randomizePassword() {
@@ -75,7 +76,8 @@ function writePassword() {
         var randomChar = passwordContainer[randomIdx];
         finalPassword = randomChar + finalPassword;
         }  
-    }}
+    }
+}
 
     // logs randomized password in console
     console.log(finalPassword);
