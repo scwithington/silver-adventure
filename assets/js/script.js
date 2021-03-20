@@ -61,9 +61,6 @@ function writePassword() {
         passwordContainer = passwordContainer.concat(alpha);
     }
 
-    // document.getElementById("password").value = passwordText;
-
-   
     // if statement preventing lack of selection
     if (!confirmInt, !confirmChar, !confirmCaps, !confirmAlpha) {
         alert("Your password must contain at least one special, numeric, lowercase, or uppercase character.");
